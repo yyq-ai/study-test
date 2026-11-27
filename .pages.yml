@@ -1,0 +1,671 @@
+# =========================================================
+# Pages CMS 配置
+# ---------------------------------------------------------
+# 在线编辑入口：https://app.pagescms.org
+# 这个文件只负责「后台表单长什么样」，网站内容在 content/*.json。
+# 不需要自己买服务器，也不需要配置 OAuth。
+# =========================================================
+
+media:
+  - name: images
+    label: 网站图片
+    input: assets/img
+    output: assets/img
+    categories: [image]
+    rename: safe
+
+content:
+  # -------------------------------------------------------
+  # 站点与个人资料
+  # -------------------------------------------------------
+  - name: site
+    label: 站点与个人资料
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: site
+        label: 站点信息
+        type: object
+        fields:
+          - name: brand
+            label: 网站名
+            type: string
+            required: true
+          - name: brandSub
+            label: 网站副标题
+            type: string
+          - name: title
+            label: 浏览器标题
+            type: string
+          - name: description
+            label: 页面描述（搜索分享摘要）
+            type: text
+          - name: footerLine
+            label: 页脚短句
+            type: string
+          - name: showPlaceholderNotes
+            label: 显示「示例 / 待替换」提示
+            type: boolean
+            default: true
+
+      - name: profile
+        label: 个人资料
+        type: object
+        fields:
+          - name: nickname
+            label: 昵称
+            type: string
+            required: true
+          - name: nicknameNote
+            label: 昵称旁的小提示
+            type: string
+            description: 换成真实资料后，可填写「个人昵称」或留空。
+          - name: school
+            label: 学校
+            type: string
+          - name: schoolNote
+            label: 学校旁的小提示
+            type: string
+          - name: major
+            label: 专业 / 方向
+            type: string
+          - name: heroImage
+            label: 首页插画 / 头像
+            type: image
+            options:
+              media: images
+              extensions: [jpg, jpeg, png, webp, avif]
+          - name: heroImageAlt
+            label: 首页图片描述（无障碍）
+            type: string
+            description: 用一句话描述图片内容，方便读屏和搜索。
+          - name: introShort
+            label: 首页短介绍
+            type: text
+          - name: introLong
+            label: 关于我长介绍
+            type: text
+          - name: motto
+            label: 座右铭
+            type: string
+          - name: mottoNote
+            label: 座右铭旁的小提示
+            type: string
+          - name: isPlaceholder
+            label: 是否仍为示例资料
+            type: boolean
+            description: 改成真实资料后关闭；会隐藏「示例昵称 / 示例简介」标签。
+
+      - name: previews
+        label: 首页预览卡片
+        type: object
+        list: true
+        fields:
+          - name: no
+            label: 序号
+            type: string
+          - name: eyebrow
+            label: 英文小标题
+            type: string
+          - name: title
+            label: 卡片标题
+            type: string
+            required: true
+          - name: text
+            label: 卡片说明
+            type: text
+          - name: href
+            label: 点击跳转到
+            type: select
+            options:
+              values:
+                - name: "#learning"
+                  label: 学习成长
+                - name: "#reading"
+                  label: 阅读与收藏
+                - name: "#projects"
+                  label: 项目展示
+                - name: "#interests"
+                  label: 兴趣与灵感
+                - name: "#gallery"
+                  label: 生活相册
+          - name: icon
+            label: 图标
+            type: select
+            options:
+              values: [spark, book, code, heart]
+          - name: tone
+            label: 配色
+            type: select
+            options:
+              values: [blue, butter, pink, sage]
+
+  # -------------------------------------------------------
+  # 关于我
+  # -------------------------------------------------------
+  - name: about
+    label: 关于我
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: heading
+        label: 关于我卡片标题
+        type: string
+      - name: fields
+        label: 昵称 / 学校 / 专业
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: 字段名
+            type: string
+          - name: value
+            label: 内容
+            type: string
+          - name: note
+            label: 小提示
+            type: string
+      - name: interestsLabel
+        label: 兴趣卡片标题
+        type: string
+      - name: interestsNote
+        label: 兴趣卡片小提示
+        type: string
+      - name: interests
+        label: 兴趣标签
+        type: string
+        list: true
+      - name: hobbiesLabel
+        label: 爱好卡片标题
+        type: string
+      - name: hobbiesNote
+        label: 爱好卡片小提示
+        type: string
+      - name: hobbies
+        label: 日常爱好
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: 图标
+            type: select
+            options:
+              values: [book, camera, music, sun, coffee, heart, spark, compass, pen, code]
+          - name: label
+            label: 名称
+            type: string
+      - name: privacy
+        label: 隐私说明
+        type: string
+
+  # -------------------------------------------------------
+  # 学习成长
+  # -------------------------------------------------------
+  - name: learning
+    label: 学习成长
+    type: file
+    path: content/learning.json
+    format: json
+    fields:
+      - name: now
+        label: 正在学习
+        type: object
+        list: true
+        fields:
+          - name: no
+            label: 序号
+            type: string
+          - name: kicker
+            label: 英文小标题
+            type: string
+          - name: title
+            label: 标题
+            type: string
+            required: true
+          - name: status
+            label: 状态
+            type: string
+          - name: tone
+            label: 配色
+            type: select
+            options:
+              values: [blue, butter, pink, sage]
+          - name: icon
+            label: 图标
+            type: select
+            options:
+              values: [spark, code, compass, pen, book, heart]
+          - name: description
+            label: 说明
+            type: text
+          - name: topics
+            label: 关键词
+            type: string
+            list: true
+          - name: note
+            label: 小提示
+            type: string
+      - name: futureLabel
+        label: 「接下来想学」标题
+        type: string
+      - name: futureNote
+        label: 「接下来想学」小提示
+        type: string
+      - name: future
+        label: 接下来想学的方向
+        type: string
+        list: true
+      - name: timelineLabel
+        label: 「学习轨迹」标题
+        type: string
+      - name: timelineNote
+        label: 「学习轨迹」小提示
+        type: string
+      - name: timeline
+        label: 成长记录
+        type: object
+        list: true
+        description: 可以留空；添加后会替换默认的空状态。
+        fields:
+          - name: date
+            label: 时间
+            type: string
+            description: 例如 2026.03
+          - name: tag
+            label: 标签
+            type: string
+            description: 例如 里程碑 / 课程 / 作品
+          - name: title
+            label: 标题
+            type: string
+          - name: text
+            label: 记录
+            type: text
+
+  # -------------------------------------------------------
+  # 阅读与收藏
+  # -------------------------------------------------------
+  - name: reading
+    label: 阅读与收藏
+    type: file
+    path: content/reading.json
+    format: json
+    fields:
+      - name: readingCategories
+        label: 四个分类（一般无需修改）
+        type: object
+        list: true
+        fields:
+          - name: key
+            label: 内部标识（请勿修改）
+            type: string
+            readonly: true
+          - name: label
+            label: 分类名称
+            type: string
+          - name: en
+            label: 英文名
+            type: string
+          - name: desc
+            label: 分类说明
+            type: text
+          - name: tone
+            label: 配色
+            type: select
+            options:
+              values: [blue, butter, pink, sage]
+          - name: icon
+            label: 图标
+            type: select
+            options:
+              values: [file, book, pen, play]
+      - name: readings
+        label: 阅读条目
+        type: object
+        list: true
+        fields:
+          - name: category
+            label: 分类
+            type: select
+            options:
+              values:
+                - name: paper
+                  label: 学术论文
+                - name: book
+                  label: 书籍
+                - name: article
+                  label: 优质文章
+                - name: film
+                  label: 影视纪录片
+          - name: title
+            label: 标题
+            type: string
+            required: true
+          - name: titleZh
+            label: 中文标题（可选）
+            type: string
+          - name: author
+            label: 作者 / 来源 / 年份
+            type: string
+          - name: status
+            label: 状态
+            type: string
+            description: 例如 已读 / 待读 / 想看 / 收藏
+          - name: summary
+            label: 内容简介
+            type: text
+          - name: note
+            label: 推荐理由 / 阅读感想
+            type: text
+          - name: link
+            label: 公开链接（可选）
+            type: string
+          - name: linkLabel
+            label: 链接按钮文字
+            type: string
+          - name: coverImage
+            label: 封面图片（可选）
+            type: image
+            options:
+              media: images
+              extensions: [jpg, jpeg, png, webp, avif]
+          - name: coverImageAlt
+            label: 封面图片描述
+            type: string
+          - name: coverMark
+            label: 无封面时的字母 / 符号
+            type: string
+            description: 例如 A / T / D / ▶
+          - name: coverLabel
+            label: 封面小字
+            type: string
+            description: 例如 PAPER / 01
+          - name: tone
+            label: 配色
+            type: select
+            options:
+              values: [blue, butter, pink, sage]
+          - name: example
+            label: 示例条目
+            type: boolean
+            default: false
+            description: 换成真实收藏后关闭，会隐藏「示例」提示。
+
+  # -------------------------------------------------------
+  # 项目展示
+  # -------------------------------------------------------
+  - name: projects
+    label: 项目展示
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: 项目列表
+        type: object
+        list: true
+        description: 完成一个项目后再添加。只放公开介绍和链接。
+        fields:
+          - name: name
+            label: 项目名称
+            type: string
+            required: true
+          - name: summary
+            label: 一句话简介
+            type: text
+          - name: purpose
+            label: 用途 / 主要功能
+            type: text
+          - name: image
+            label: 项目预览图（可选）
+            type: image
+            options:
+              media: images
+              extensions: [jpg, jpeg, png, webp, avif]
+          - name: link
+            label: 公开访问链接
+            type: string
+            description: 必须是可以公开的网址，不要填后台或内部链接。
+          - name: linkLabel
+            label: 链接按钮文字
+            type: string
+            default: 访问项目
+      - name: projectsIntro
+        label: 空状态文案
+        type: object
+        fields:
+          - name: eyebrow
+            label: 英文小标题
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: text
+            label: 说明
+            type: text
+          - name: note
+            label: 底部署名 / 提示
+            type: string
+          - name: specs
+            label: 项目包含哪些信息
+            type: string
+            list: true
+
+  # -------------------------------------------------------
+  # 兴趣与灵感
+  # -------------------------------------------------------
+  - name: interests
+    label: 兴趣与灵感
+    type: file
+    path: content/interests.json
+    format: json
+    fields:
+      - name: tags
+        label: 灵感关键词
+        type: string
+        list: true
+      - name: cards
+        label: 灵感墙卡片
+        type: block
+        list: true
+        blockKey: type
+        blocks:
+          - name: image
+            label: 图片卡片
+            fields:
+              - name: src
+                label: 图片
+                type: image
+                options:
+                  media: images
+                  extensions: [jpg, jpeg, png, webp, avif]
+              - name: alt
+                label: 图片描述（无障碍）
+                type: string
+              - name: eyebrow
+                label: 英文小标题
+                type: string
+              - name: title
+                label: 标题
+                type: string
+              - name: caption
+                label: 图片说明
+                type: string
+              - name: tone
+                label: 配色
+                type: select
+                options:
+                  values: [blue, butter, pink, sage]
+              - name: placeholder
+                label: 是否示例图片
+                type: boolean
+          - name: quote
+            label: 引用卡片
+            fields:
+              - name: text
+                label: 引用内容
+                type: text
+              - name: note
+                label: 出处 / 小提示
+                type: string
+              - name: tone
+                label: 配色
+                type: select
+                options:
+                  values: [blue, butter, pink, sage]
+          - name: palette
+            label: 配色卡片
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: subtitle
+                label: 说明
+                type: text
+              - name: colors
+                label: 颜色（#RRGGBB）
+                type: string
+                list: true
+          - name: tags
+            label: 关键词卡片
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: note
+                label: 小提示
+                type: string
+          - name: note
+            label: 文字卡片
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: text
+                label: 正文
+                type: text
+              - name: footer
+                label: 小提示
+                type: string
+              - name: tone
+                label: 配色
+                type: select
+                options:
+                  values: [blue, butter, pink, sage]
+
+  # -------------------------------------------------------
+  # 生活相册
+  # -------------------------------------------------------
+  - name: gallery
+    label: 生活相册
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: galleryCategories
+        label: 相册分类（一般无需修改）
+        type: object
+        list: true
+        fields:
+          - name: key
+            label: 内部标识（请勿修改）
+            type: string
+            readonly: true
+          - name: label
+            label: 分类名称
+            type: string
+      - name: gallery
+        label: 相册图片
+        type: object
+        list: true
+        fields:
+          - name: src
+            label: 图片
+            type: image
+            options:
+              media: images
+              extensions: [jpg, jpeg, png, webp, avif]
+          - name: alt
+            label: 图片描述（无障碍）
+            type: string
+          - name: title
+            label: 标题
+            type: string
+            required: true
+          - name: caption
+            label: 图片说明
+            type: string
+          - name: category
+            label: 分类
+            type: select
+            options:
+              values:
+                - name: life
+                  label: 生活照片
+                - name: star
+                  label: 喜欢的明星
+                - name: collection
+                  label: 收藏与灵感
+          - name: categoryLabel
+            label: 卡片短标签
+            type: string
+            description: 留空会自动显示生活 / 明星 / 收藏。
+          - name: tone
+            label: 卡片底色
+            type: select
+            options:
+              values: [blue, butter, pink, sage]
+          - name: span
+            label: 桌面端占几列
+            type: number
+            default: 4
+            description: 建议 3–12；数字越大卡片越宽。
+          - name: placeholder
+            label: 是否示例图片
+            type: boolean
+            default: false
+      - name: galleryEmpty
+        label: 空分类提示
+        type: object
+        fields:
+          - name: star
+            label: 喜欢的明星
+            type: object
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: text
+                label: 说明
+                type: text
+              - name: note
+                label: 小提示
+                type: string
+          - name: collection
+            label: 收藏与灵感
+            type: object
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: text
+                label: 说明
+                type: text
+              - name: note
+                label: 小提示
+                type: string
+          - name: life
+            label: 生活照片
+            type: object
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: text
+                label: 说明
+                type: text
+              - name: note
+                label: 小提示
+                type: string
