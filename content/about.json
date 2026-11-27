@@ -3,11 +3,13 @@
   "fields": [
     {
       "label": "姓名",
-      "value": "YYQ"
+      "value": "YYQ",
+      "note": "没啥新意"
     },
     {
       "label": "学校",
-      "value": "UCAS"
+      "value": "中国科学技术大学",
+      "note": "UCAS"
     },
     {
       "label": "专业",
