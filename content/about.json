@@ -25,20 +25,20 @@
   "hobbiesLabel": "日常里的我",
   "hobbies": [
     {
-      "icon": "book",
-      "label": "阅读"
-    },
-    {
-      "icon": "camera",
-      "label": "拍照"
-    },
-    {
       "icon": "music",
       "label": "听歌"
     },
     {
       "icon": "sun",
-      "label": "散步"
+      "label": "篮球"
+    },
+    {
+      "icon": "coffee",
+      "label": "下棋"
+    },
+    {
+      "icon": "compass",
+      "label": "到处逛"
     }
   ],
   "privacy": "公开页面 · 不展示联系方式、学号等敏感信息"
