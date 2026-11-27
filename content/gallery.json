@@ -32,6 +32,7 @@
     {
       "src": "assets/img/image1795754607160.jpg",
       "title": "鞠姐永远美丽呀",
+      "category": "star",
       "span": 4,
       "placeholder": false
     },
@@ -39,6 +40,7 @@
       "src": "assets/img/img20261121183814.jpg",
       "alt": "浅浅去舞会玩玩吧",
       "title": "初探舞会",
+      "category": "life",
       "span": 4,
       "placeholder": false
     }
