@@ -7,11 +7,14 @@
       "status": "正在学习",
       "tone": "blue",
       "icon": "spark",
-      "description": "从数学与编程基础开始，慢慢理解机器学习与神经网络为什么这样工作。",
+      "description": "还在学习AI工具的应用，努力从AI小白转型",
       "topics": [
         "Python",
-        "数学基础",
-        "机器学习"
+        "数理基础",
+        "机器学习",
+        "具身智能",
+        "C++",
+        "英语"
       ],
       "note": "学习方向 · 具体进度待补充"
     },
@@ -54,6 +57,5 @@
     "更多方向待补充"
   ],
   "timelineLabel": "学习轨迹",
-  "timelineNote": "成长记录 · 待补充",
-  "timeline": []
+  "timelineNote": "成长记录 · 待补充"
 }
