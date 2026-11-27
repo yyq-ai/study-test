@@ -17,13 +17,12 @@
   "interestsLabel": "感兴趣的领域",
   "interestsNote": "还在不断添加中",
   "interests": [
-    "人工智能基础",
+    "人工智能",
     "编程与创造",
     "设计表达",
     "阅读与收藏"
   ],
   "hobbiesLabel": "日常里的我",
-  "hobbiesNote": "示例爱好 · 可替换",
   "hobbies": [
     {
       "icon": "book",
