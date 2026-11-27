@@ -2,28 +2,25 @@
   "heading": "心之所向，皆是自由成长的旷野",
   "fields": [
     {
-      "label": "昵称",
-      "value": "你的名字",
-      "note": "待替换"
+      "label": "姓名",
+      "value": "YYQ"
     },
     {
       "label": "学校",
-      "value": "某某大学",
-      "note": "待补充"
+      "value": "UCAS"
     },
     {
       "label": "专业",
-      "value": "专业名称 · 待补充"
+      "value": "人工智能"
     }
   ],
   "interestsLabel": "感兴趣的领域",
-  "interestsNote": "可继续添加",
+  "interestsNote": "还在不断添加中",
   "interests": [
     "人工智能基础",
     "编程与创造",
     "设计表达",
-    "阅读与收藏",
-    "更多待补充"
+    "阅读与收藏"
   ],
   "hobbiesLabel": "日常里的我",
   "hobbiesNote": "示例爱好 · 可替换",
