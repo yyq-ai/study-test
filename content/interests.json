@@ -4,24 +4,12 @@
     "纸上设计",
     "电影与纪录片",
     "生活观察",
-    "可爱事物",
-    "散步与天空"
+    "奇思妙想"
   ],
   "cards": [
     {
-      "type": "image",
-      "src": "assets/img/cat/bao-tr.webp",
-      "alt": "一只橘白相间的包子猫趴着晒太阳，身旁有黄色小闪光",
-      "eyebrow": "A soft afternoon",
-      "title": "晒太阳的下午",
-      "caption": "包子猫插画 · 可替换成自己的照片",
-      "tone": "butter",
-      "placeholder": true
-    },
-    {
       "type": "quote",
       "text": "把喜欢的事，慢慢做成生活。",
-      "note": "一句想记住的话 · 待替换",
       "tone": "blue"
     },
     {
@@ -37,24 +25,10 @@
       ]
     },
     {
-      "type": "tags",
-      "title": "会忍不住多看两眼",
-      "note": "示例关键词 · 可替换"
-    },
-    {
-      "type": "note",
-      "title": "喜欢的设计",
-      "text": "留白、圆角、柔软的阴影，和一点点手绘线条。希望页面像一张被阳光晒暖的纸。",
-      "footer": "示例文字 · 可替换",
-      "tone": "pink"
-    },
-    {
       "type": "image",
       "src": "assets/img/cat/bao-br.webp",
-      "alt": "一只蓝耳朵包子猫闭着眼睛听歌，头顶有一个音符",
-      "eyebrow": "Before sleep",
-      "title": "睡前的小曲",
-      "caption": "包子猫插画 · 可替换成自己的照片",
+      "alt": "不想像这只猫瘫在这里，到处逛才是真理",
+      "eyebrow": "freedom",
       "tone": "blue",
       "placeholder": true
     }
