@@ -10,11 +10,8 @@
       "description": "还在学习AI工具的应用，努力从AI小白转型",
       "topics": [
         "Python",
-        "数理基础",
         "机器学习",
-        "具身智能",
-        "C++",
-        "英语"
+        "具身智能"
       ],
       "note": "学习方向 · 具体进度待补充"
     },
@@ -27,25 +24,24 @@
       "icon": "code",
       "description": "用代码把脑子里的想法一点点做出来，也练习把大问题拆成可以解决的小步骤。",
       "topics": [
-        "HTML / CSS",
-        "JavaScript",
-        "Git"
+        "python",
+        "C++"
       ],
       "note": "练习方向 · 内容待补充"
     },
     {
       "no": "03",
-      "kicker": "Horizon",
-      "title": "其他感兴趣的领域",
+      "kicker": "design",
+      "title": "编辑设计",
       "status": "保持好奇",
       "tone": "pink",
-      "icon": "compass",
-      "description": "设计、影像、写作，或某个突然闯进视线的领域。等真正开始，再来把这里填满。",
+      "icon": "pen",
+      "description": "想从什么都不懂的设计小白进化",
       "topics": [
-        "方向待补充",
-        "方向待补充"
-      ],
-      "note": "待探索 · 尚未开始"
+        "秀米",
+        "可画",
+        "画世界"
+      ]
     }
   ],
   "futureLabel": "接下来想学",
@@ -57,5 +53,12 @@
     "更多方向待补充"
   ],
   "timelineLabel": "学习轨迹",
-  "timelineNote": "成长记录 · 待补充"
+  "timelineNote": "成长记录 · 待补充",
+  "timeline": [
+    {
+      "date": "2026.11",
+      "tag": "第一个小项目",
+      "title": "这个小小的个人小天地诞生"
+    }
+  ]
 }
