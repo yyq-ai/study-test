@@ -1,0 +1,62 @@
+{
+  "site": {
+    "brand": "little nook",
+    "brandSub": "personal growth space",
+    "title": "Little Nook · 我的个人成长空间",
+    "description": "一个记录学习、阅读、创造与生活的个人成长空间。",
+    "footerLine": "愿你也有一处慢慢生长的小角落。",
+    "showPlaceholderNotes": true
+  },
+  "profile": {
+    "nickname": "你的名字",
+    "nicknameNote": "示例昵称 · 待替换",
+    "school": "某某大学",
+    "schoolNote": "学校 · 待补充",
+    "major": "专业名称 · 待补充",
+    "heroImage": "assets/img/cat/bao-tl.webp",
+    "heroImageAlt": "一只圆滚滚的白色包子猫，睁着大眼睛，身旁有黄色小闪光",
+    "introShort": "一个对世界保持好奇的人。正在学习人工智能与编程，也在收集阅读、设计与生活里的微小灵感。",
+    "introLong": "喜欢把复杂的事情拆开慢慢理解，也喜欢把日常里不起眼的小瞬间收藏起来。相信成长不是一场冲刺，而是一段允许绕路、允许停下来的旅程。这里会留下学习、阅读、创造和生活的痕迹，也欢迎你偶尔来坐坐。",
+    "motto": "慢一点，也是在向前。",
+    "mottoNote": "座右铭 · 待替换",
+    "isPlaceholder": true
+  },
+  "previews": [
+    {
+      "no": "01",
+      "eyebrow": "Learning now",
+      "title": "正在学习",
+      "text": "人工智能基础与编程，一点点把好奇变成能力。",
+      "href": "#learning",
+      "icon": "spark",
+      "tone": "blue"
+    },
+    {
+      "no": "02",
+      "eyebrow": "On my shelf",
+      "title": "最近在读",
+      "text": "论文、书、文章和影像，各自安静地待在书架上。",
+      "href": "#reading",
+      "icon": "book",
+      "tone": "butter"
+    },
+    {
+      "no": "03",
+      "eyebrow": "In progress",
+      "title": "正在做",
+      "text": "第一件作品还在孵化，这里先为它留一盏灯。",
+      "href": "#projects",
+      "icon": "code",
+      "tone": "pink"
+    },
+    {
+      "no": "04",
+      "eyebrow": "Little joys",
+      "title": "最近喜欢",
+      "text": "颜色、设计、影像，以及生活里突然亮一下的瞬间。",
+      "href": "#interests",
+      "icon": "heart",
+      "tone": "sage"
+    }
+  ]
+}

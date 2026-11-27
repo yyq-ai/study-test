@@ -1,0 +1,105 @@
+{
+  "galleryCategories": [
+    {
+      "key": "all",
+      "label": "全部"
+    },
+    {
+      "key": "life",
+      "label": "生活照片"
+    },
+    {
+      "key": "star",
+      "label": "喜欢的明星"
+    },
+    {
+      "key": "collection",
+      "label": "收藏与灵感"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/img/cat/bao-tl.webp",
+      "alt": "一只圆滚滚的白色包子猫，睁着大眼睛身旁有黄色小闪光",
+      "title": "今天也圆滚滚",
+      "caption": "没什么大事，只是认真发了一会儿呆。",
+      "category": "life",
+      "categoryLabel": "生活",
+      "tone": "blue",
+      "span": 5,
+      "placeholder": true
+    },
+    {
+      "src": "assets/img/cat/bao-tm.webp",
+      "alt": "一只白色包子猫闭着眼睛，头顶飘着一颗粉色爱心",
+      "title": "收到一颗小心心",
+      "caption": "被惦记的时候，普通日子也会亮一下。",
+      "category": "life",
+      "categoryLabel": "生活",
+      "tone": "pink",
+      "span": 7,
+      "placeholder": true
+    },
+    {
+      "src": "assets/img/cat/bao-tr.webp",
+      "alt": "一只橘白相间的包子猫趴着，身旁有黄色小闪光",
+      "title": "晒到太阳了",
+      "caption": "午后的光，刚好落在耳朵上。",
+      "category": "life",
+      "categoryLabel": "生活",
+      "tone": "butter",
+      "span": 4,
+      "placeholder": true
+    },
+    {
+      "src": "assets/img/cat/bao-bl.webp",
+      "alt": "一只灰色包子猫闭着眼睛，头上冒出困倦的线条",
+      "title": "不想起床",
+      "caption": "再躺五分钟，就五分钟。",
+      "category": "collection",
+      "categoryLabel": "收藏",
+      "tone": "sage",
+      "span": 3,
+      "placeholder": true
+    },
+    {
+      "src": "assets/img/cat/bao-bm.webp",
+      "alt": "一只棕白相间的包子猫眯着眼睛，旁边有黄色小闪光",
+      "title": "偷偷开心",
+      "caption": "今天也有被自己可爱到。",
+      "category": "collection",
+      "categoryLabel": "收藏",
+      "tone": "butter",
+      "span": 5,
+      "placeholder": true
+    },
+    {
+      "src": "assets/img/cat/bao-br.webp",
+      "alt": "一只蓝耳朵包子猫闭着眼睛听歌，头顶有一个音符",
+      "title": "听完这首歌就睡",
+      "caption": "晚安之前，把今天轻轻收好。",
+      "category": "life",
+      "categoryLabel": "生活",
+      "tone": "blue",
+      "span": 12,
+      "placeholder": true
+    }
+  ],
+  "galleryEmpty": {
+    "star": {
+      "title": "这一格，留给喜欢的人。",
+      "text": "喜欢的明星、角色或演出收藏，之后会好好放在这里。当前不虚构任何人物或照片。",
+      "note": "明星收藏位 · 待添加"
+    },
+    "collection": {
+      "title": "还没有新的收藏。",
+      "text": "遇到喜欢的画面、展览或小物件时，再把它放到这里。",
+      "note": "收藏位 · 待添加"
+    },
+    "life": {
+      "title": "生活照片，等你来放。",
+      "text": "只会上传你主动挑选并愿意公开的照片。",
+      "note": "照片位 · 待添加"
+    }
+  }
+}

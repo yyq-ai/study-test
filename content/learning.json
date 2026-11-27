@@ -1,0 +1,59 @@
+{
+  "now": [
+    {
+      "no": "01",
+      "kicker": "Foundation",
+      "title": "人工智能基础",
+      "status": "正在学习",
+      "tone": "blue",
+      "icon": "spark",
+      "description": "从数学与编程基础开始，慢慢理解机器学习与神经网络为什么这样工作。",
+      "topics": [
+        "Python",
+        "数学基础",
+        "机器学习"
+      ],
+      "note": "学习方向 · 具体进度待补充"
+    },
+    {
+      "no": "02",
+      "kicker": "Practice",
+      "title": "编程与创造",
+      "status": "持续练习",
+      "tone": "butter",
+      "icon": "code",
+      "description": "用代码把脑子里的想法一点点做出来，也练习把大问题拆成可以解决的小步骤。",
+      "topics": [
+        "HTML / CSS",
+        "JavaScript",
+        "Git"
+      ],
+      "note": "练习方向 · 内容待补充"
+    },
+    {
+      "no": "03",
+      "kicker": "Horizon",
+      "title": "其他感兴趣的领域",
+      "status": "保持好奇",
+      "tone": "pink",
+      "icon": "compass",
+      "description": "设计、影像、写作，或某个突然闯进视线的领域。等真正开始，再来把这里填满。",
+      "topics": [
+        "方向待补充",
+        "方向待补充"
+      ],
+      "note": "待探索 · 尚未开始"
+    }
+  ],
+  "futureLabel": "接下来想学",
+  "futureNote": "示例方向 · 可替换",
+  "future": [
+    "多模态与生成式 AI",
+    "人机交互",
+    "开源协作",
+    "更多方向待补充"
+  ],
+  "timelineLabel": "学习轨迹",
+  "timelineNote": "成长记录 · 待补充",
+  "timeline": []
+}

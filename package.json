@@ -1,0 +1,10 @@
+{
+  "name": "little-nook-personal-site",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Little Nook 个人成长空间：纯静态站点 + Pages CMS + GitHub",
+  "scripts": {
+    "sync": "node scripts/sync-fallback.mjs",
+    "serve": "python -m http.server 8000"
+  }
+}
