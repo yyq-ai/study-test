@@ -1,25 +1,22 @@
 {
   "site": {
-    "brand": "little nook",
-    "brandSub": "personal growth space",
-    "title": "Little Nook · 我的个人成长空间",
+    "brand": "生长一隅",
+    "brandSub": "个人成长的一片小天地",
+    "title": "生长一隅 · 个人成长的一片小天地",
     "description": "一个记录学习、阅读、创造与生活的个人成长空间。",
     "footerLine": "愿你也有一处慢慢生长的小角落。",
     "showPlaceholderNotes": true
   },
   "profile": {
-    "nickname": "你的名字",
-    "nicknameNote": "示例昵称 · 待替换",
-    "school": "某某大学",
-    "schoolNote": "学校 · 待补充",
-    "major": "专业名称 · 待补充",
+    "nickname": "YYQ",
+    "school": "UCAS",
+    "major": "人工智能",
     "heroImage": "assets/img/cat/bao-tl.webp",
     "heroImageAlt": "一只圆滚滚的白色包子猫，睁着大眼睛，身旁有黄色小闪光",
-    "introShort": "一个对世界保持好奇的人。正在学习人工智能与编程，也在收集阅读、设计与生活里的微小灵感。",
-    "introLong": "喜欢把复杂的事情拆开慢慢理解，也喜欢把日常里不起眼的小瞬间收藏起来。相信成长不是一场冲刺，而是一段允许绕路、允许停下来的旅程。这里会留下学习、阅读、创造和生活的痕迹，也欢迎你偶尔来坐坐。",
-    "motto": "慢一点，也是在向前。",
-    "mottoNote": "座右铭 · 待替换",
-    "isPlaceholder": true
+    "introShort": "一个对世界保持好奇的人。正在学习人工智能与数理基础，也在收集设计与生活里的微小灵感。",
+    "introLong": "喜欢把复杂的事情拆开慢慢理解，也喜欢把日常里不起眼的小瞬间收藏起来。相信成长不是一场冲刺，而是一段允许绕路、允许停下来的旅程。心向自由，大胆向前。这里会留下学习、阅读、创造和生活的痕迹，也欢迎你偶尔来坐坐。",
+    "motto": "借山间风，渡人间路；万事不拘，随心而往",
+    "isPlaceholder": false
   },
   "previews": [
     {
