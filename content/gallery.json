@@ -34,6 +34,13 @@
       "title": "小鞠永远美丽",
       "span": 4,
       "placeholder": false
+    },
+    {
+      "src": "assets/img/img20261121183814.jpg",
+      "alt": "浅浅去舞会玩玩吧",
+      "title": "初探舞会",
+      "span": 4,
+      "placeholder": false
     }
   ],
   "galleryEmpty": {
